@@ -19,7 +19,7 @@ import {
 export default function App() {
     return (
         <>
-            <Header>Jorge&apos;s Component Library++</Header>
+            <Header>TMA&apos;s Component Library++</Header>
             <Carousel>
                 {/* Shape Options: square, pill */}
                 <Library type="badge" style="">
