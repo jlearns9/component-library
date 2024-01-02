@@ -1,0 +1,486 @@
+/* html, body{} */
+
+body {
+    font-family: inter, Verdana, Geneva, Tahoma, sans-serif;
+    padding: 1em;
+}
+
+/*########## LIBRARY COMPONENT ##########*/
+.library {
+    flex-direction: column;
+    align-items: center;
+}
+
+.library__title {
+    font-size: 2.75rem;
+    margin: 0;
+}
+
+/*########## HEADER COMPONENT ##########*/
+.header {
+    gap: 10px;
+    align-items: center;
+}
+
+.header__icon {
+    animation: spin 12s linear infinite;
+    color: lightseagreen;
+    font-size: 2rem;
+}
+
+/* .header__title {} */
+
+/*########## CAROUSEL COMPONENT ##########*/
+.carousel {
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+.carousel__buttons {
+    justify-content: center;
+    gap: 4em;
+    margin-bottom: 1em;
+}
+
+.carousel__button {
+    background-color: #d1fae5;
+    border: none;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+}
+
+.carousel__button:hover {
+    box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.5);
+}
+
+/*########## BADGE COMPONENT ##########*/
+/* .badge{} */
+
+.badge__type {
+    grid-template-columns: 100px auto;
+    gap: 10px;
+}
+
+.badge__title {
+    color: #5e5d5d;
+    margin-bottom: 0;
+    text-decoration: underline;
+    text-transform: capitalize;
+}
+
+/* .badge__detalis {} */
+
+.badge__buttons {
+    flex-wrap: wrap;
+    gap: 7px;
+}
+
+.badge__button {
+    border: none;
+    font-size: 1.25rem;
+    font-weight: 400;
+    letter-spacing: 0.45px;
+    padding: 0.25em 0.75em;
+}
+
+/*########## BANNER COMPONENT ##########*/
+.banner {
+    border-radius: 5px;
+    gap: 10px;
+    margin: 0 0 1em;
+    padding: 1em;
+}
+
+.banner__title {
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.banner__description {
+    font-size: 1rem;
+    font-style: normal;
+}
+
+/*########## CARD COMPONENT ##########*/
+.card {
+    margin: 0 1em;
+}
+
+.card__details {
+    background: #f9fafb;
+    border-radius: 5px;
+    margin-top: 1em;
+    padding: 1em 2em;
+    position: relative;
+    text-align: center;
+    width: 280px;
+}
+
+.card__details:hover {
+    box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.1);
+}
+
+.card__icon {
+    background: #3f75fe;
+    border-radius: 5px;
+    padding: 0.25em;
+    position: absolute;
+    width: 36px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card__title {
+    margin: 0.75em 0;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.card__description {
+    color: #6b7280;
+    text-align: center;
+}
+
+/*########## TESTIMONIAL COMPONENT ##########*/
+.testimonial {
+    background: #2545b8;
+    position: relative;
+    margin-top: 8em;
+    width: 300px;
+}
+
+.testimonial__image {
+    border-radius: 10px;
+    box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.testimonial__details {
+    color: #fff;
+    padding: 8em 1em 1em;
+}
+
+.testimonial__quote {
+    font-size: 1rem;
+    line-height: 1.25em;
+    letter-spacing: 0.05em;
+    margin-top: 1em;
+}
+
+.testimonial__name {
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+}
+
+.testimonial__role {
+    font-size: 0.75rem;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+}
+
+.testimonial-alt {
+    background: #F9FAFB;
+    padding: 1em 0 0;
+    position: relative;
+    margin-top: 2em;
+    width: 300px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.testimonial-alt__details {
+    color: #111827;
+    font-weight: 500;
+    text-align: center;
+    padding: 0 1em 1em;
+    margin-top: 2em;
+
+}
+
+.testimonial-alt__contact {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 1em 0 4em;
+}
+
+.testimonial-alt__quote {
+    margin-top: 2em
+}
+
+.svg__dots {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/*########## TOOLTIP COMPONENT ##########*/
+.tooltip {
+    border-radius: 10px;
+    gap: 1em;
+    margin: 0 1em 3em;
+    box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.08);
+    min-width: 300px;
+}
+
+.tooltip__container {
+    border: 2px solid gray;
+    margin: 10px;
+    width: 385.6px;
+    height: 205px;
+    position: relative;
+}
+
+.tooltip__button {
+    margin: 10px;
+    bottom: 0;
+    position: absolute;
+}
+
+.tooltip__details {
+    border-radius: 10px;
+    gap: 1em;
+    padding: 1em;
+    margin-top: 1em;
+    position: relative;
+}
+
+.tooltip__title {
+    font-weight: 500;
+}
+
+.tooltip__description {
+    max-width: 280px;
+}
+
+.tooltip__triangle {
+    position: absolute;
+    bottom: -70%;
+    left: 10%;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 86.6px solid transparent;
+    clip-path: polygon(0% 0%, 25% 40%, 40% 0%);
+}
+
+/*########## TOAST COMPONENT ##########*/
+.toast {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    animation: fadeInAndOut 4s ease forwards;
+}
+
+.toast__button {
+    margin: 1em;
+}
+
+.toast__img {
+    width: 128px;
+}
+
+.toast__details {
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+    animation: fadeInToast .5s ease forwards;
+}
+
+.toast__title {
+    font-weight: 600;
+}
+
+/* .toast__description {} */
+
+/*########## MISC/UTILITY ##########*/
+.flex {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.divider {
+    display: none;
+    color: #2E59F3;
+    font-weight: 700;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.center {
+    justify-content: center;
+}
+
+.small__text {
+    color: gray;
+    font-size: 0.65rem;
+    margin: 0;
+    text-transform: capitalize;
+    margin-top: 1.5em;
+}
+
+/* MARKER FONT */
+.library__title,
+.badge__title {
+    font-family: "Permanent Marker", cursive;
+}
+
+/* SHAPES */
+.square {
+    border-radius: 4px;
+}
+
+.pill {
+    border-radius: 20px;
+}
+
+/* COLORS */
+.gray {
+    background: #f3f4f6;
+    color: #1f2937;
+}
+
+.red {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.yellow {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.green {
+    background: #d1fae5;
+    color: #065f46;
+}
+
+.blue {
+    background: #dbeafe;
+    color: #1e40af;
+}
+
+.indigo {
+    background: #e0e7ff;
+    color: #3730a3;
+}
+
+.purple {
+    background: #ede9fe;
+    color: #5b21b6;
+}
+
+.pink {
+    background: #fce7f3;
+    color: #9d174d;
+}
+
+/*########## MEDIA QUERIES ##########*/
+@media (min-width: 320px) {
+}
+
+@media (min-width: 768px) {
+
+    .testimonial {
+        width: auto;
+        display: flex;
+        align-items: center; /* Center items horizontally */
+        margin-top: 2.5em;
+    }
+
+    .testimonial-alt {
+        width: auto;
+    }
+    
+    .testimonial__image {
+        top: 50%;
+        left: 2em;
+        transform: translate(0, -50%)    }
+    
+    .testimonial__details {
+        padding: 1em 0 0 15em;
+    }
+
+    .testimonial-alt__contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 0 .5em;
+    }
+    
+    .testimonial__quote {
+        margin: 0;
+    }
+
+    .testimonial-alt__quote {
+        margin-top: 2em;
+        max-width: 620px;
+    }
+
+    .divider {
+        display: inline;
+    }
+}
+
+@media (min-width: 1200px) {
+}
+
+/*########## KEYFRAMES ##########*/
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fadeInToast {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInAndOut {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    10% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    90% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+  }
